@@ -41,7 +41,17 @@ mkdir -p ~/Library/Application\ Support/OED
 mv oed.sqlite ~/Library/Application\ Support/OED/
 ```
 
-## 3. Build and install the app
+## 3. Install the app
+
+With Homebrew (updates arrive with `brew upgrade`):
+
+```sh
+brew install --cask btafssp/verbamac/oed2-reader
+```
+
+The app is not notarized; if macOS blocks it, run `xattr -dr com.apple.quarantine /Applications/OED.app`.
+
+Or build from source:
 
 ```sh
 ./build_app.sh --install      # builds and copies OED.app to /Applications
