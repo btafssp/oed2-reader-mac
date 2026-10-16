@@ -1,0 +1,10 @@
+.DS_Store
+*.sqlite
+samples/
+OED_HTM/
+*.htm
+build/
+.build/
+.venv/
+__pycache__/
+build_report.json

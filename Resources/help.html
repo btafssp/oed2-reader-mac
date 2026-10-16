@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#fbf8f1;--fg:#1d1b18;--muted:#6b6359;--head:#7a1e1e;--rule:#e2dccf;--link:#1f5fa8;--box:#f3eee2;--k:#5a4a8a}
+@media (prefers-color-scheme: dark){:root:not(.light){--bg:#1e1e20;--fg:#e8e4dc;--muted:#9a9389;--head:#e8a27a;--rule:#3a3a3e;--link:#7fb2f0;--box:#27272a;--k:#b7a7ef}}
+:root.dark{--bg:#1e1e20;--fg:#e8e4dc;--muted:#9a9389;--head:#e8a27a;--rule:#3a3a3e;--link:#7fb2f0;--box:#27272a;--k:#b7a7ef}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font:14px/1.45 "Iowan Old Style","Palatino","Georgia",serif}
+#bar{position:sticky;top:0;z-index:2;display:flex;gap:8px;align-items:center;padding:8px 14px;background:var(--bg);border-bottom:1px solid var(--rule)}
+#bar input{flex:1;font:inherit;padding:5px 8px;border:1px solid var(--rule);border-radius:6px;background:var(--box);color:var(--fg)}
+#bar .hint{color:var(--muted);font-size:12px;white-space:nowrap}
+main{padding:6px 22px 40px;max-width:52rem}
+h1{font-size:1.5rem;color:var(--head);margin:.8em 0 .3em}
+h2{font-size:1.15rem;color:var(--head);margin:1.4em 0 .4em;border-bottom:1px solid var(--rule);padding-bottom:.2em}
+h3{font-size:1rem;margin:1em 0 .3em;color:var(--muted)}
+p{margin:.4em 0}.note{background:var(--box);border-left:3px solid var(--rule);padding:.5em .8em;font-size:.92em}
+a{color:var(--link)}
+table.kv{width:100%;border-collapse:collapse;margin:.3em 0 1em}
+table.kv td{vertical-align:top;padding:.28em .4em;border-bottom:1px solid var(--rule)}
+table.kv td.k{width:12em;font-weight:700;color:var(--k);white-space:nowrap}
+.hidden{display:none!important}
+.credit{margin-top:2em;font-size:.8em;color:var(--muted)}
+</style></head><body>
+<div id="bar"><input id="q" type="search" placeholder="Search symbols and abbreviations…" autofocus><span class="hint" id="count"></span></div>
+<main>
+<h1>Symbols and Abbreviations</h1>
+<p class="note">Official wording from the Oxford English Dictionary. Section&nbsp;1 quotes
+<a href="https://www.oed.com/information/understanding-entries/symbols-and-other-conventions">Symbols and other conventions</a>
+on OED Online, with supplementary sentences from James Murray’s <i>General Explanations</i>.
+Section&nbsp;2 is the
+<a href="https://www.oed.com/information/understanding-entries/pronunciation/british-english-pronunciations/pronunciation-in-the-second-edition/">Key to Second Edition pronunciation transcriptions</a>.
+Section&nbsp;3 combines the OED Online
+<a href="https://www.oed.com/information/understanding-entries/abbreviations/">Abbreviations</a>
+list with the printed <i>List of Abbreviations, Signs, &amp;c.</i> from the First Edition front matter.</p>
+
+<section id="s1">
+<h2>1. Entry signs and date marks</h2>
+<p>From OED Online, <i>Symbols and other conventions</i>:</p>
+<h3>Before a word or meaning</h3>
+<table class="kv">
+<tr><td class="k">†</td><td class="v">= obsolete</td></tr>
+</table>
+<h3>In an etymology</h3>
+<table class="kv">
+<tr><td class="k">*</td><td class="v">indicates a word or form not actually found, but of which the existence is inferred</td></tr>
+<tr><td class="k">&lt;</td><td class="v">= from</td></tr>
+<tr><td class="k">&gt;</td><td class="v">= developed into or borrowed as</td></tr>
+</table>
+<h3>Within a forms section</h3>
+<table class="kv">
+<tr><td class="k">α., β., and other letters of the Greek alphabet</td><td class="v">indicate lists of forms that are in some way similar or related. For example, in the case of fantastic adj. and n. the α. and β are used to separate the forms that begin with the letter f- and those that begin with ph-. The letters will also appear in the quotations sections alongside the illustrative examples of the similar or related forms.</td></tr>
+</table>
+<h3>Before a date</h3>
+<table class="kv">
+<tr><td class="k">a</td><td class="v">= ante (‘before’)</td></tr>
+<tr><td class="k">c</td><td class="v">= circa (‘approximately’)</td></tr>
+<tr><td class="k">?</td><td class="v">indicates an uncertain date</td></tr>
+</table>
+<h3>Within a definition</h3>
+<table class="kv">
+<tr><td class="k">=</td><td class="v">means ‘the same as’</td></tr>
+</table>
+<h3>Within the quotations section</h3>
+<table class="kv">
+<tr><td class="k">‥</td><td class="v">indicates an omitted part of a quotation</td></tr>
+<tr><td class="k">[ ]</td><td class="v">surrounds an editorial insertion</td></tr>
+<tr><td class="k">~</td><td class="v">indicates a hyphen introduced in the printing of the First Edition of the OED, which may not have been present in the cited text</td></tr>
+</table>
+<h3>Around an entire quotation</h3>
+<table class="kv">
+<tr><td class="k">[ ]</td><td class="v">indicates that a quotation is relevant to the development of a meaning but not directly illustrative of it</td></tr>
+</table>
+<h3>Symbols used in previous editions of the OED</h3>
+<p>“The following are symbols used in previous editions of the OED: print editions and/or the Second Edition entries which can be viewed online.”</p>
+<table class="kv">
+<tr><td class="k">‖</td><td class="v">This symbol means that the word was not considered to be naturalized in English</td></tr>
+<tr><td class="k">¶</td><td class="v">This symbol means that the word or usage was considered catachrestic or erroneous</td></tr>
+<tr><td class="k">[ ]</td><td class="v">Square brackets around an entire entry indicate a ‘spurious’ entry, for example a word which, on investigation, turned out to be a misreading</td></tr>
+<tr><td class="k">–0</td><td class="v">This symbol after the label Obs. (Obsolete) or rare indicates a word or meaning for which no contextual examples from printed or written sources were available to the editors</td></tr>
+<tr><td class="k">–1</td><td class="v">This symbol after the label Obs. (Obsolete) or rare indicates a word or meaning for which only one contextual example from a printed or written source was available to the editors</td></tr>
+<tr><td class="k">–2</td><td class="v">This symbol after the label Obs. (Obsolete) or rare indicates a word or meaning for which only two contextual examples from printed or written sources were available to the editors</td></tr>
+</table>
+<p>“The following abbreviations were formerly used in lists of variant spellings:”</p>
+<table class="kv">
+<tr><td class="k">1</td><td class="v">= before 1100</td></tr>
+<tr><td class="k">2</td><td class="v">= 12th century (1100–1200)</td></tr>
+<tr><td class="k">3</td><td class="v">= 13th century (1200–1300)</td></tr>
+<tr><td class="k">4</td><td class="v">= 14th century (1300–1400)</td></tr>
+<tr><td class="k">5-8</td><td class="v">= 15th to 18th century</td></tr>
+<tr><td class="k">9-</td><td class="v">= 19th century to present</td></tr>
+<tr><td class="k">20</td><td class="v">= 20th century</td></tr>
+</table>
+<h3>From Murray’s <i>General Explanations</i></h3>
+<table class="kv">
+<tr><td class="k">† and ‖</td><td class="v">Words believed to be obsolete are distinguished by prefixing †; non-naturalized or partially-naturalized words, by ‖.</td></tr>
+<tr><td class="k">† before a sense</td><td class="v">Obsolete Senses, like obsolete words, have † prefixed, so as to be at once distinguished from those now in use.</td></tr>
+<tr><td class="k">Forms numbering</td><td class="v">The principal earlier Forms or Spellings, with their chronological range indicated by the unit figure of the century, thus 3–6 = 13th to 16th cent.; 1 standing for all centuries down to 1100.</td></tr>
+<tr><td class="k">rare —¹ / —⁰</td><td class="v">Here also is added, when applicable, the epithet rare, with —¹, or —⁰, indicating that only one, or no actual instance of the use of the word is known to us.</td></tr>
+<tr><td class="k">SMALL CAPITALS</td><td class="v">The printing of a word in SMALL CAPITALS indicates that further information will be found under the word so referred to.</td></tr>
+</table>
+</section>
+
+<section id="s2">
+<h2>2. Key to Second Edition pronunciation transcriptions</h2>
+<p>“A small number of entries, which have not been revised or had their pronunciation sections upgraded, give only British English pronunciation transcriptions in the style of the Second Edition (1989). The key to these transcriptions is reproduced here for reference.”</p>
+<p>This CD-ROM text uses that Second Edition style throughout.</p>
+<h3>I. Consonants</h3>
+<p>“b, d, f, k, l, m, n, p, t, v, z have their usual English values”</p>
+<table class="kv">
+<tr><td class="k">ɡ</td><td class="v">as in go /gəʊ/</td></tr>
+<tr><td class="k">h</td><td class="v">ho! /həʊ/</td></tr>
+<tr><td class="k">r</td><td class="v">run /rʌn/, terrier /ˈtɛrɪə(r)/</td></tr>
+<tr><td class="k">(r)</td><td class="v">her /hɜː(r)/</td></tr>
+<tr><td class="k">s</td><td class="v">see /siː/, success /səkˈsɛs/</td></tr>
+<tr><td class="k">w</td><td class="v">wear /wɛə(r)/</td></tr>
+<tr><td class="k">hw</td><td class="v">when /hwɛn/</td></tr>
+<tr><td class="k">j</td><td class="v">yes /jɛs/</td></tr>
+<tr><td class="k">θ</td><td class="v">thin /θɪn/, bath /bɑːθ/</td></tr>
+<tr><td class="k">ð</td><td class="v">then /ðɛn/, bathe /beɪð/</td></tr>
+<tr><td class="k">ʃ</td><td class="v">shop /ʃɒp/, dish /dɪʃ/</td></tr>
+<tr><td class="k">tʃ</td><td class="v">chop /tʃɒp/, ditch /dɪtʃ/</td></tr>
+<tr><td class="k">ʒ</td><td class="v">vision /ˈvɪʒən/, déjeuner /deʒœne/</td></tr>
+<tr><td class="k">dʒ</td><td class="v">judge /dʒʌdʒ/</td></tr>
+<tr><td class="k">ŋ</td><td class="v">singing /ˈsɪŋɪŋ/, think /θɪŋk/</td></tr>
+<tr><td class="k">ŋg</td><td class="v">finger /ˈfɪŋgə(r)/</td></tr>
+<tr><td class="k">ʎ</td><td class="v">Italian serraglio /serˈraʎo/</td></tr>
+<tr><td class="k">ɲ</td><td class="v">French cognac /kɔɲak/</td></tr>
+<tr><td class="k">x</td><td class="v">German ach /ax/, Scots loch /lɒx/, Spanish frijoles /friˈxoles/</td></tr>
+<tr><td class="k">ç</td><td class="v">German ich /ɪç/, Scots nicht /nɪçt/</td></tr>
+<tr><td class="k">ɣ</td><td class="v">North German sagen /ˈzaːɣən/</td></tr>
+<tr><td class="k">c</td><td class="v">Afrikaans baardmannetjie /ˈbaːrtmanəci/</td></tr>
+<tr><td class="k">ɥ</td><td class="v">French cuisine /kɥizin/</td></tr>
+</table>
+<h3>II. Vowels and Diphthongs</h3>
+<table class="kv">
+<tr><td class="k">ɪ</td><td class="v">pit /pɪt/, -ness /nɪs/</td></tr>
+<tr><td class="k">ɛ</td><td class="v">pet /pɛt/, French sept /sɛt/</td></tr>
+<tr><td class="k">æ</td><td class="v">pat /pæt/</td></tr>
+<tr><td class="k">ʌ</td><td class="v">putt /pʌt/</td></tr>
+<tr><td class="k">ɒ</td><td class="v">pot /pɒt/</td></tr>
+<tr><td class="k">ʊ</td><td class="v">put /pʊt/</td></tr>
+<tr><td class="k">ə</td><td class="v">another /əˈnʌðə(r)/</td></tr>
+<tr><td class="k">(ə)</td><td class="v">beaten /ˈbiːt(ə)n/</td></tr>
+<tr><td class="k">i</td><td class="v">French si /si/</td></tr>
+<tr><td class="k">e</td><td class="v">French bébé /bebe/</td></tr>
+<tr><td class="k">a</td><td class="v">French mari /mari/</td></tr>
+<tr><td class="k">ɑ</td><td class="v">French bâtiment /bɑtimɑ̃/</td></tr>
+<tr><td class="k">ɔ</td><td class="v">French homme /ɔm/</td></tr>
+<tr><td class="k">o</td><td class="v">French eau /o/</td></tr>
+<tr><td class="k">ø</td><td class="v">French peu /pø/</td></tr>
+<tr><td class="k">œ</td><td class="v">French boeuf /bœf/, cœur /kœr/</td></tr>
+<tr><td class="k">u</td><td class="v">French douce /dus/</td></tr>
+<tr><td class="k">ʏ</td><td class="v">German Müller /ˈmʏlər/</td></tr>
+<tr><td class="k">y</td><td class="v">French du /dy/</td></tr>
+<tr><td class="k">iː</td><td class="v">bean /biːn/</td></tr>
+<tr><td class="k">ɑː</td><td class="v">barn /bɑːn/</td></tr>
+<tr><td class="k">ɔː</td><td class="v">born /bɔːn/</td></tr>
+<tr><td class="k">uː</td><td class="v">boon /buːn/</td></tr>
+<tr><td class="k">ɜː</td><td class="v">burn /bɜːn/</td></tr>
+<tr><td class="k">eː</td><td class="v">German Schnee /ʃneː/</td></tr>
+<tr><td class="k">ɛː</td><td class="v">German Fähre /ˈfɛːrə/</td></tr>
+<tr><td class="k">aː</td><td class="v">German Tag /taːk/</td></tr>
+<tr><td class="k">oː</td><td class="v">German Sohn /zoːn/</td></tr>
+<tr><td class="k">øː</td><td class="v">German Goethe /ˈgøːtə/</td></tr>
+<tr><td class="k">yː</td><td class="v">German grün /gryːn/</td></tr>
+<tr><td class="k">ɛ̃, æ̃</td><td class="v">French fin /fɛ̃, fæ̃/</td></tr>
+<tr><td class="k">ɑ̃</td><td class="v">French franc /frɑ̃/</td></tr>
+<tr><td class="k">ɔ̃</td><td class="v">French bon /bɔ̃/</td></tr>
+<tr><td class="k">œ̃</td><td class="v">French un /œ̃/</td></tr>
+<tr><td class="k">eɪ</td><td class="v">bay /beɪ/</td></tr>
+<tr><td class="k">aɪ</td><td class="v">buy /baɪ/</td></tr>
+<tr><td class="k">ɔɪ</td><td class="v">boy /bɔɪ/</td></tr>
+<tr><td class="k">əʊ</td><td class="v">no /nəʊ/</td></tr>
+<tr><td class="k">aʊ</td><td class="v">now /naʊ/</td></tr>
+<tr><td class="k">ɪə</td><td class="v">peer /pɪə(r)/</td></tr>
+<tr><td class="k">ɛə</td><td class="v">pair /pɛə(r)/</td></tr>
+<tr><td class="k">ʊə</td><td class="v">tour /tʊə(r)/</td></tr>
+<tr><td class="k">ɔə</td><td class="v">boar /bɔə(r)/</td></tr>
+<tr><td class="k">aɪə</td><td class="v">fiery /ˈfaɪərɪ/</td></tr>
+<tr><td class="k">aʊə</td><td class="v">sour /saʊə(r)/</td></tr>
+</table>
+<p class="note">Symbols in parentheses are used to denote elements that may be omitted either by individual speakers or in particular phonetic contexts: e.g. bottle /ˈbɒt(ə)l/, Mercian /ˈmɜːʃ(ɪ)ən/, suit /s(j)uːt/, impromptu /ɪmˈprɒm(p)tjuː/, father /ˈfɑːðə(r)/.</p>
+<p class="note">The incidence of main stress is shown by a superior stress mark (ˈ) preceding the stressed syllable, and a secondary stress by an inferior stress mark (ˌ), e.g. accentuation /ækˌsɛntjuːˈeɪʃən/.</p>
+</section>
+
+<section id="s3">
+<h2>3. Abbreviations</h2>
+<p>“This list contains the most common abbreviations used in the OED. … Most of the words listed are only abbreviated in certain contexts, esp. when used as a subject label or in a work title.”</p>
+<table class="kv">
+<tr><td class="k">a (as a 1300)</td><td class="v">ante, before.</td></tr>
+<tr><td class="k">a. [in Etymol.]</td><td class="v">adoption of, adopted from.</td></tr>
+<tr><td class="k">abbrev.</td><td class="v">abbreviation (of)</td></tr>
+<tr><td class="k">absol.</td><td class="v">absolute(ly)</td></tr>
+<tr><td class="k">ad.</td><td class="v">adaptation of</td></tr>
+<tr><td class="k">ad. [in Etymol.]</td><td class="v">adaptation of.</td></tr>
+<tr><td class="k">adj.</td><td class="v">adjective, adjectival</td></tr>
+<tr><td class="k">adv.</td><td class="v">adverb, adverbial(ly)</td></tr>
+<tr><td class="k">AF., AFr.</td><td class="v">Anglo-French.</td></tr>
+<tr><td class="k">app.</td><td class="v">apparently</td></tr>
+<tr><td class="k">arch.</td><td class="v">archaic</td></tr>
+<tr><td class="k">attrib.</td><td class="v">attributive(ly)</td></tr>
+<tr><td class="k">Austral.</td><td class="v">Australia(n)</td></tr>
+<tr><td class="k">Brit.</td><td class="v">Britain, British</td></tr>
+<tr><td class="k">c (as c 1300)</td><td class="v">circa, about.</td></tr>
+<tr><td class="k">Canad.</td><td class="v">Canadian</td></tr>
+<tr><td class="k">cf.</td><td class="v">confer, ‘compare’</td></tr>
+<tr><td class="k">cl. L.</td><td class="v">classical Latin.</td></tr>
+<tr><td class="k">colloq.</td><td class="v">colloquial(ly)</td></tr>
+<tr><td class="k">Comb.</td><td class="v">combination(s)</td></tr>
+<tr><td class="k">comp.</td><td class="v">comparative / compound, composition</td></tr>
+<tr><td class="k">conj.</td><td class="v">conjugation / conjunction</td></tr>
+<tr><td class="k">contempt.</td><td class="v">contemptuous(ly)</td></tr>
+<tr><td class="k">Da.</td><td class="v">Danish.</td></tr>
+<tr><td class="k">derog.</td><td class="v">derogatory</td></tr>
+<tr><td class="k">dial.</td><td class="v">dialect</td></tr>
+<tr><td class="k">Du.</td><td class="v">Dutch.</td></tr>
+<tr><td class="k">east.</td><td class="v">eastern (dialect)</td></tr>
+<tr><td class="k">ellipt.</td><td class="v">elliptical(ly)</td></tr>
+<tr><td class="k">erron.</td><td class="v">erroneous(ly)</td></tr>
+<tr><td class="k">esp.</td><td class="v">especially</td></tr>
+<tr><td class="k">euphem.</td><td class="v">euphemistic(ally)</td></tr>
+<tr><td class="k">f. (in subordinate entries)</td><td class="v">form of.</td></tr>
+<tr><td class="k">f. [in Etymol.]</td><td class="v">formed on.</td></tr>
+<tr><td class="k">F., Fr.</td><td class="v">French.</td></tr>
+<tr><td class="k">fem.</td><td class="v">feminine</td></tr>
+<tr><td class="k">fig.</td><td class="v">figurative(ly)</td></tr>
+<tr><td class="k">freq.</td><td class="v">frequently</td></tr>
+<tr><td class="k">G., Ger.</td><td class="v">German.</td></tr>
+<tr><td class="k">Gael.</td><td class="v">Gaelic.</td></tr>
+<tr><td class="k">gen.</td><td class="v">general(ly) / genitive</td></tr>
+<tr><td class="k">Goth.</td><td class="v">Gothic (= Mœso-Gothic).</td></tr>
+<tr><td class="k">Gr.</td><td class="v">Greek.</td></tr>
+<tr><td class="k">Heb.</td><td class="v">Hebrew.</td></tr>
+<tr><td class="k">imp.</td><td class="v">imperative</td></tr>
+<tr><td class="k">ind.</td><td class="v">indicative / indirect</td></tr>
+<tr><td class="k">int.</td><td class="v">interjection</td></tr>
+<tr><td class="k">interj.</td><td class="v">interjection</td></tr>
+<tr><td class="k">intr.</td><td class="v">intransitive</td></tr>
+<tr><td class="k">Ir.</td><td class="v">Irish</td></tr>
+<tr><td class="k">It.</td><td class="v">Italian.</td></tr>
+<tr><td class="k">joc.</td><td class="v">jocular(ly)</td></tr>
+<tr><td class="k">L.</td><td class="v">Latin.</td></tr>
+<tr><td class="k">lit.</td><td class="v">literal(ly)</td></tr>
+<tr><td class="k">masc.</td><td class="v">masculine</td></tr>
+<tr><td class="k">ME.</td><td class="v">Middle English.</td></tr>
+<tr><td class="k">med.</td><td class="v">medieval</td></tr>
+<tr><td class="k">med. L.</td><td class="v">mediæval Latin.</td></tr>
+<tr><td class="k">MHG.</td><td class="v">Middle High German.</td></tr>
+<tr><td class="k">midl.</td><td class="v">midland(s) (dialect)</td></tr>
+<tr><td class="k">mod.</td><td class="v">modern</td></tr>
+<tr><td class="k">n.</td><td class="v">neuter / north / noun</td></tr>
+<tr><td class="k">N. Amer.</td><td class="v">North America(n)</td></tr>
+<tr><td class="k">N.Z.</td><td class="v">New Zealand</td></tr>
+<tr><td class="k">nonce-wd.</td><td class="v">nonce-word</td></tr>
+<tr><td class="k">north.</td><td class="v">northern (dialect)</td></tr>
+<tr><td class="k">Obs.</td><td class="v">obsolete</td></tr>
+<tr><td class="k">obs.</td><td class="v">obsolete</td></tr>
+<tr><td class="k">occas.</td><td class="v">occasionally</td></tr>
+<tr><td class="k">OE</td><td class="v">(in dates) Old English</td></tr>
+<tr><td class="k">OE.</td><td class="v">Old English (= Anglo-Saxon).</td></tr>
+<tr><td class="k">OF., OFr.</td><td class="v">Old French.</td></tr>
+<tr><td class="k">OFris.</td><td class="v">Old Frisian.</td></tr>
+<tr><td class="k">OHG.</td><td class="v">Old High German.</td></tr>
+<tr><td class="k">OIr.</td><td class="v">Old Irish.</td></tr>
+<tr><td class="k">ON.</td><td class="v">Old Norse (Old Icelandic).</td></tr>
+<tr><td class="k">ONF.</td><td class="v">Old Northern French.</td></tr>
+<tr><td class="k">orig.</td><td class="v">origin(al)(ly)</td></tr>
+<tr><td class="k">OS.</td><td class="v">Old Saxon.</td></tr>
+<tr><td class="k">OTeut.</td><td class="v">Original Teutonic.</td></tr>
+<tr><td class="k">pa. pple.</td><td class="v">passive participle, past participle</td></tr>
+<tr><td class="k">pa. t.</td><td class="v">past tense</td></tr>
+<tr><td class="k">pass.</td><td class="v">passive(ly)</td></tr>
+<tr><td class="k">perh.</td><td class="v">perhaps</td></tr>
+<tr><td class="k">Pg.</td><td class="v">Portuguese.</td></tr>
+<tr><td class="k">phr.</td><td class="v">phrase</td></tr>
+<tr><td class="k">pl.</td><td class="v">plural</td></tr>
+<tr><td class="k">poet.</td><td class="v">poetic(al)</td></tr>
+<tr><td class="k">ppl. a.</td><td class="v">participial adjective</td></tr>
+<tr><td class="k">Pr.</td><td class="v">Provençal.</td></tr>
+<tr><td class="k">pref.</td><td class="v">prefix</td></tr>
+<tr><td class="k">prep.</td><td class="v">preposition(al)</td></tr>
+<tr><td class="k">pres.</td><td class="v">present</td></tr>
+<tr><td class="k">pres. pple.</td><td class="v">present participle</td></tr>
+<tr><td class="k">prob.</td><td class="v">probably</td></tr>
+<tr><td class="k">q.v.</td><td class="v">quod vide, ‘which see’</td></tr>
+<tr><td class="k">refl.</td><td class="v">reflexive</td></tr>
+<tr><td class="k">Rom.</td><td class="v">Romanic, Romance.</td></tr>
+<tr><td class="k">S. Afr.</td><td class="v">South Africa(n)</td></tr>
+<tr><td class="k">s.v.</td><td class="v">sub verbo, ‘under the word’</td></tr>
+<tr><td class="k">sb.</td><td class="v">substantive.</td></tr>
+<tr><td class="k">Sc.</td><td class="v">Scottish, Scots</td></tr>
+<tr><td class="k">sc.</td><td class="v">scilicet, ‘understand’ or ‘supply’</td></tr>
+<tr><td class="k">sing.</td><td class="v">singular</td></tr>
+<tr><td class="k">Skr.</td><td class="v">Sanskrit.</td></tr>
+<tr><td class="k">south.</td><td class="v">southern (dialect)</td></tr>
+<tr><td class="k">Sp.</td><td class="v">Spanish.</td></tr>
+<tr><td class="k">spec.</td><td class="v">specifically</td></tr>
+<tr><td class="k">subj.</td><td class="v">subject / subjunctive</td></tr>
+<tr><td class="k">suff.</td><td class="v">suffix</td></tr>
+<tr><td class="k">Sw.</td><td class="v">Swedish.</td></tr>
+<tr><td class="k">trans.</td><td class="v">transitive</td></tr>
+<tr><td class="k">transf.</td><td class="v">transferred sense</td></tr>
+<tr><td class="k">U.S.</td><td class="v">United States</td></tr>
+<tr><td class="k">usu.</td><td class="v">usually</td></tr>
+<tr><td class="k">v.</td><td class="v">verb</td></tr>
+<tr><td class="k">var.</td><td class="v">variant</td></tr>
+<tr><td class="k">vbl. sb.</td><td class="v">verbal substantive.</td></tr>
+<tr><td class="k">viz.</td><td class="v">videlicet, ‘namely’</td></tr>
+<tr><td class="k">W.</td><td class="v">west, western</td></tr>
+<tr><td class="k">west.</td><td class="v">western</td></tr>
+<tr><td class="k">WGer.</td><td class="v">West Germanic.</td></tr>
+<tr><td class="k">WS.</td><td class="v">West Saxon.</td></tr>
+</table>
+</section>
+
+<p class="credit">© Oxford University Press. Explanatory text reproduced from OUP’s published conventions.
+Sources linked above; Murray’s <i>General Explanations</i> from public.oed.com (Wayback Machine copy).</p>
+</main>
+<script>
+const q=document.getElementById('q'), count=document.getElementById('count');
+const rows=[...document.querySelectorAll('table.kv tr')];
+const sections=[...document.querySelectorAll('section')];
+function go(){
+  const s=q.value.trim().toLowerCase(); let n=0;
+  rows.forEach(tr=>{const hit=!s||tr.textContent.toLowerCase().includes(s); tr.classList.toggle('hidden',!hit); if(hit)n++;});
+  sections.forEach(sec=>{
+    const any=[...sec.querySelectorAll('table.kv tr')].some(tr=>!tr.classList.contains('hidden'));
+    const prose=!s||sec.textContent.toLowerCase().includes(s);
+    sec.classList.toggle('hidden', !!s && !any && !prose);
+  });
+  count.textContent=s?(n+' match'+(n===1?'':'es')):'';
+}
+q.addEventListener('input',go);
+</script></body></html>
