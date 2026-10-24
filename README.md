@@ -46,7 +46,7 @@ mv oed.sqlite ~/Library/Application\ Support/OED/
 With Homebrew (updates arrive with `brew upgrade`):
 
 ```sh
-brew install --cask btafssp/verbamac/oed2-reader
+brew install --cask btafssp/tap/oed2-reader
 ```
 
 The app is not notarized; if macOS blocks it, run `xattr -dr com.apple.quarantine /Applications/OED.app`.
